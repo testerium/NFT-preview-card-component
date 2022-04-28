@@ -68,7 +68,45 @@ p, .text_left {
 	width: 300px;
 	height: 300px;
 	border-radius: 10px;
+	position: relative;
 }
+
+.shadow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -92%);
+	opacity: 0;
+	width: 300px;
+	height: 300px;
+}
+
+.shadow:hover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -92%);
+	opacity: 0.5;
+	cursor: pointer;
+	background-color: var(--cyan);
+	border-radius: 10px;
+}
+
+.icon_view {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.icon_view:hover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+} 
 
 .text {
 	display: flex;
@@ -113,4 +151,9 @@ p, .text_left {
 
 .name {
 	color: var(--white);
+}
+
+.name:hover, h1:hover {
+	cursor: pointer;
+	color: var(--cyan);
 }
